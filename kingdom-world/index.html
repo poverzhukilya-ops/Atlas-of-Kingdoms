@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Kingdom Territories</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифт Inter (опционально) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- ЛЕВАЯ ЧАСТЬ: КАРТА -->
+        <div class="map-area">
+            <div class="map-header">
+                <h1>🗺️ MAP OF KINGDOMS</h1>
+                <p id="totalCitizens">0 total citizens • territory = % of population</p>
+            </div>
+            <div class="map-container">
+                <canvas id="worldMap"></canvas>
+            </div>
+        </div>
+
+        <!-- ПРАВАЯ ЧАСТЬ: РЕЙТИНГ -->
+        <div class="rank-area">
+            <div class="rank-card">
+                <div class="rank-header">
+                    <h2>🏆 LEADERBOARD</h2>
+                    <span>BY POPULATION</span>
+                </div>
+                <div class="kingdom-list" id="kingdomList">
+                    <!-- динамически заполняется JS -->
+                </div>
+                <button class="join-btn" id="createBtn">✨ JOIN KINGDOM</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
